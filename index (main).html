@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============== SEO META TAGS ============== -->
+  <title>Muhammad Hassan | Computer Science Student &amp; Software Developer</title>
+  <meta name="description" content="Portfolio of Muhammad Hassan, a Computer Science student and aspiring software developer specializing in Python, C++, JavaScript and Flask. View projects, skills, and contact info." />
+  <meta name="keywords" content="Muhammad Hassan, Computer Science Student, Software Developer, Python Developer, Flask, Portfolio" />
+  <meta name="author" content="Muhammad Hassan" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Muhammad Hassan | Computer Science Student & Software Developer" />
+  <meta property="og:description" content="Computer Science student and aspiring software developer. Explore my projects, skills, and journey in tech." />
+  <meta property="og:site_name" content="Muhammad Hassan — Portfolio" />
+
+  <meta name="theme-color" content="#0a0e17" />
+
+  <!-- ============== FONTS ==============
+       Display/Body: Inter (clean geometric sans)
+       Utility/Code: JetBrains Mono (developer-coded identity)
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon (inline SVG monogram, no external asset needed) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0e17'/%3E%3Ctext x='50' y='66' font-size='50' font-family='monospace' fill='%2300d9b5' text-anchor='middle'%3EMH%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ============== SKIP LINK (Accessibility) ============== -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ============== CUSTOM CURSOR GLOW (decorative) ============== -->
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ============== NAVIGATION ============== -->
+  <header>
+    <nav class="navbar" id="navbar" aria-label="Primary navigation">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo" aria-label="Muhammad Hassan home">
+          <span class="logo-bracket">&lt;</span>Hassan<span class="logo-bracket">/&gt;</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active-link" data-section="home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+          <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+          <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+          <li><a href="#cv" class="nav-link" data-section="cv">CV</a></li>
+          <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <!-- Dark / Light mode toggle -->
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode" title="Toggle theme">
+            <i class="fa-solid fa-moon" id="themeIconMoon"></i>
+            <i class="fa-solid fa-sun" id="themeIconSun"></i>
+          </button>
+
+          <!-- Mobile hamburger -->
+          <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============== HERO SECTION ============== -->
+    <section id="home" class="hero" aria-label="Introduction">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="grid-overlay"></div>
+        <div class="glow-orb glow-orb-1"></div>
+        <div class="glow-orb glow-orb-2"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-text">
+          <p class="eyebrow">// 01 — Hello, world</p>
+
+          <h1 class="hero-title">
+            Muhammad <span class="text-gradient">Hassan</span>
+          </h1>
+
+          <p class="hero-subtitle">Computer Science Student &amp; Aspiring Software Developer</p>
+
+          <!-- Terminal-style typed intro: the page's signature element -->
+          <div class="terminal-card" role="img" aria-label="Terminal animation introducing Muhammad Hassan">
+            <div class="terminal-header">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="terminal-title">hassan@portfolio: ~</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">$</span> <span id="typedText" class="typed-text"></span><span class="cursor-blink">|</span></p>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-code"></i> View My Work
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-regular fa-paper-plane"></i> Get In Touch
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/hassanmaliknew0987" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/malik-hassan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:hassanmaliknew0987@gmail.com" aria-label="Send email"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-frame">
+            <div class="profile-ring"></div>
+            <div class="profile-avatar" aria-label="Muhammad Hassan profile picture" style="position:relative; overflow:hidden; background:#fff; z-index:5;">
+              <img src="profile.jpeg" alt="Muhammad Hassan" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center top; border-radius:50%; display:block; z-index:6;" />
+            </div>
+            <span class="badge-floating badge-1"><i class="fa-brands fa-python"></i></span>
+            <span class="badge-floating badge-2"><i class="fa-brands fa-js"></i></span>
+            <span class="badge-floating badge-3"><i class="fa-solid fa-terminal"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <span>Scroll</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ============== ABOUT SECTION ============== -->
+    <section id="about" class="section" aria-label="About me">
+      <div class="container">
+        <p class="eyebrow">// 02 — About</p>
+        <h2 class="section-title">Get to know me</h2>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a final-year <strong>Computer Science</strong> student with a deep curiosity for how software
+              shapes the world around us. My journey started with simple scripts in Python and has grown into
+              building full-stack applications, exploring data structures and algorithms, and writing clean,
+              maintainable code.
+            </p>
+            <p>
+              I enjoy solving challenging problems, contributing to open-source projects, and constantly learning
+              new technologies. I'm currently focused on backend development with <strong>Flask</strong>, sharpening
+              my <strong>C++</strong> fundamentals, and building projects that solve real problems.
+            </p>
+            <p>
+              When I'm not coding, you'll find me reading about system design, practicing competitive programming,
+              or sketching out my next side project.
+            </p>
+
+            <div class="about-stats">
+              <div class="stat-card">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Projects Built</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Years Coding</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">9</span>
+                <span class="stat-label">Core Technologies</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card glass-card">
+            <h3><i class="fa-solid fa-user-graduate"></i> Quick Facts</h3>
+            <ul class="facts-list">
+              <li><i class="fa-solid fa-graduation-cap"></i> BSCS Undergraduate Student</li>
+              <li><i class="fa-solid fa-location-dot"></i> Punjab, Pakistan</li>
+              <li><i class="fa-solid fa-code-branch"></i> Open to Internships &amp; Collaboration</li>
+              <li><i class="fa-solid fa-language"></i> English &amp; Urdu</li>
+              <li><i class="fa-solid fa-bullseye"></i> Goal: Software Engineer Role</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== SKILLS SECTION ============== -->
+    <section id="skills" class="section section-alt" aria-label="Technical skills">
+      <div class="container">
+        <p class="eyebrow">// 03 — Skills</p>
+        <h2 class="section-title">Technical toolbox</h2>
+        <p class="section-subtitle">Technologies and tools I use to bring ideas to life.</p>
+
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <div class="skill-icon" style="--icon-color:#3776AB"><i class="fa-brands fa-python"></i></div>
+            <h3>Python</h3>
+            <div class="progress-bar"><div class="progress-fill" data-progress="90"></div></div>
+            <span class="progress-percent">90%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="--icon-color:#00599C"><i class="fa-solid fa-c"></i></div>
+            <h3>C++</h3>
+            <div class="progress-bar"><div class="progress-fill" data-progress="80"></div></div>
+            <span class="progress-percent">80%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="--icon-color:#E34F26"><i class="fa-brands fa-html5"></i></div>
+            <h3>HTML</h3>
+            <div class="progress-bar"><div class="progress-fill" data-progress="95"></div></div>
+            <span class="progress-percent">95%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="--icon-color:#1572B6"><i class="fa-brands fa-css3-alt"></i></div>
+            <h3>CSS</h3>
+            <div class="progress-bar"><div class="progress-fill" data-progress="90"></div></div>
+            <span class="progress-percent">90%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="--icon-color:#F7DF1E"><i class="fa-brands fa-js"></i></div>
+            <h3>JavaScript</h3>
+            <div class="progress-bar"><div class="progress-fill" data-progress="80"></div></div>
+            <span class="progress-percent">80%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="--icon-color:#00d9b5"><i class="fa-solid fa-flask"></i></div>
+            <h3>Flask</h3>
+            <div class="progress-bar"><div class="progress-fill" data-progress="75"></div></div>
+            <span class="progress-percent">75%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="--icon-color:#F05032"><i class="fa-brands fa-git-alt"></i></div>
+            <h3>Git</h3>
+            <div class="progress-bar"><div class="progress-fill" data-progress="85"></div></div>
+            <span class="progress-percent">85%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="--icon-color:#ffffff"><i class="fa-brands fa-github"></i></div>
+            <h3>GitHub</h3>
+            <div class="progress-bar"><div class="progress-fill" data-progress="85"></div></div>
+            <span class="progress-percent">85%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon" style="--icon-color:#00d9b5"><i class="fa-solid fa-puzzle-piece"></i></div>
+            <h3>Problem Solving</h3>
+            <div class="progress-bar"><div class="progress-fill" data-progress="92"></div></div>
+            <span class="progress-percent">92%</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== PROJECTS SECTION ============== -->
+    <section id="projects" class="section" aria-label="Projects">
+      <div class="container">
+        <p class="eyebrow">// 04 — Projects</p>
+        <h2 class="section-title">Things I've built</h2>
+        <p class="section-subtitle">A selection of projects that reflect my learning and problem-solving process.</p>
+
+        <div class="projects-grid">
+
+          <!-- Project 0: Airline Reservation System -->
+          <article class="project-card">
+            <div class="project-image">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="project-svg" role="img" aria-label="Airline reservation system preview">
+                <rect width="400" height="220" fill="#0f1623"/>
+                <rect x="20" y="20" width="360" height="30" rx="6" fill="#1a2436"/>
+                <circle cx="36" cy="35" r="5" fill="#ff5f56"/>
+                <circle cx="54" cy="35" r="5" fill="#ffbd2e"/>
+                <circle cx="72" cy="35" r="5" fill="#27c93f"/>
+                <path d="M70 150 L210 110 L340 95 L320 115 L220 135 L150 175 Z" fill="#00d9b5" opacity="0.85"/>
+                <path d="M210 110 L235 70 L255 75 L240 118 Z" fill="#00d9b5" opacity="0.6"/>
+                <line x1="60" y1="170" x2="340" y2="170" stroke="#2a3b52" stroke-width="2" stroke-dasharray="6 6"/>
+                <rect x="270" y="64" width="96" height="24" rx="4" fill="#1a2436" stroke="#2a3b52" stroke-width="1.5"/>
+                <text x="318" y="80" font-family="monospace" font-size="11" fill="#8b5cf6" text-anchor="middle">Seat 14A</text>
+              </svg>
+            </div>
+            <div class="project-content">
+              <h3>Airline Reservation System</h3>
+              <p>An object-oriented airline booking system handling flights, seat allocation, and passenger records using core OOP principles like inheritance and encapsulation.</p>
+              <div class="tech-badges">
+                <span class="badge">C++</span>
+                <span class="badge">OOP</span>
+                <span class="badge">Data Structures</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 1: Sorting Visualizer -->
+          <article class="project-card">
+            <div class="project-image">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="project-svg" role="img" aria-label="Sorting algorithm visualizer preview">
+                <rect width="400" height="220" fill="#0f1623"/>
+                <rect x="20" y="20" width="360" height="30" rx="6" fill="#1a2436"/>
+                <circle cx="36" cy="35" r="5" fill="#ff5f56"/>
+                <circle cx="54" cy="35" r="5" fill="#ffbd2e"/>
+                <circle cx="72" cy="35" r="5" fill="#27c93f"/>
+                <g>
+                  <rect x="36" y="150" width="26" height="50" fill="#00d9b5"/>
+                  <rect x="74" y="120" width="26" height="80" fill="#00d9b5" opacity="0.85"/>
+                  <rect x="112" y="90" width="26" height="110" fill="#00d9b5" opacity="0.7"/>
+                  <rect x="150" y="160" width="26" height="40" fill="#8b5cf6"/>
+                  <rect x="188" y="70" width="26" height="130" fill="#00d9b5" opacity="0.55"/>
+                  <rect x="226" y="110" width="26" height="90" fill="#00d9b5" opacity="0.7"/>
+                  <rect x="264" y="140" width="26" height="60" fill="#00d9b5" opacity="0.85"/>
+                  <rect x="302" y="100" width="26" height="100" fill="#8b5cf6"/>
+                  <rect x="340" y="80" width="26" height="120" fill="#00d9b5" opacity="0.4"/>
+                </g>
+              </svg>
+            </div>
+            <div class="project-content">
+              <h3>DSA Sorting Visualizer</h3>
+              <p>An interactive visualizer that animates how sorting algorithms like Bubble, Merge, and Quick Sort organize data step by step.</p>
+              <div class="tech-badges">
+                <span class="badge">JavaScript</span>
+                <span class="badge">HTML5</span>
+                <span class="badge">Algorithms</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: OS Page Replacement Visualizer -->
+          <article class="project-card">
+            <div class="project-image">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="project-svg" role="img" aria-label="CPU page replacement algorithm visualizer preview">
+                <rect width="400" height="220" fill="#0f1623"/>
+                <rect x="20" y="20" width="360" height="30" rx="6" fill="#1a2436"/>
+                <circle cx="36" cy="35" r="5" fill="#ff5f56"/>
+                <circle cx="54" cy="35" r="5" fill="#ffbd2e"/>
+                <circle cx="72" cy="35" r="5" fill="#27c93f"/>
+                <g fill="#1a2436" stroke="#2a3b52" stroke-width="2">
+                  <rect x="30" y="64" width="50" height="40"/><rect x="90" y="64" width="50" height="40"/>
+                  <rect x="150" y="64" width="50" height="40"/><rect x="210" y="64" width="50" height="40"/>
+                  <rect x="270" y="64" width="50" height="40"/><rect x="330" y="64" width="40" height="40"/>
+                </g>
+                <rect x="30" y="64" width="50" height="40" fill="#00d9b5" opacity="0.3"/>
+                <rect x="150" y="64" width="50" height="40" fill="#8b5cf6" opacity="0.4"/>
+                <rect x="270" y="64" width="50" height="40" fill="#00d9b5" opacity="0.3"/>
+                <text x="55" y="90" font-family="monospace" font-size="16" fill="#00d9b5" text-anchor="middle">3</text>
+                <text x="115" y="90" font-family="monospace" font-size="16" fill="#9aa7bd" text-anchor="middle">1</text>
+                <text x="175" y="90" font-family="monospace" font-size="16" fill="#8b5cf6" text-anchor="middle">4</text>
+                <text x="235" y="90" font-family="monospace" font-size="16" fill="#9aa7bd" text-anchor="middle">2</text>
+                <rect x="30" y="130" width="340" height="50" rx="4" fill="#1a2436"/>
+                <text x="50" y="160" font-family="monospace" font-size="14" fill="#00d9b5">Page Fault: 5 → Hit Ratio: 62%</text>
+              </svg>
+            </div>
+            <div class="project-content">
+              <h3>CPU Page Replacement Visualizer</h3>
+              <p>An Operating Systems project visualizing advanced page replacement algorithms (FIFO, LRU, Optimal) and comparing their page-fault rates in real time.</p>
+              <div class="tech-badges">
+                <span class="badge">C++</span>
+                <span class="badge">Operating Systems</span>
+                <span class="badge">Algorithms</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Water Level Indicator -->
+          <article class="project-card">
+            <div class="project-image">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="project-svg" role="img" aria-label="Water level indicator circuit preview">
+                <rect width="400" height="220" fill="#0f1623"/>
+                <rect x="20" y="20" width="360" height="30" rx="6" fill="#1a2436"/>
+                <circle cx="36" cy="35" r="5" fill="#ff5f56"/>
+                <circle cx="54" cy="35" r="5" fill="#ffbd2e"/>
+                <circle cx="72" cy="35" r="5" fill="#27c93f"/>
+                <rect x="150" y="68" width="100" height="130" rx="6" fill="#1a2436" stroke="#2a3b52" stroke-width="2"/>
+                <rect x="154" y="140" width="92" height="54" fill="#00b4d8" opacity="0.45"/>
+                <rect x="154" y="160" width="92" height="34" fill="#00b4d8" opacity="0.6"/>
+                <circle cx="200" cy="60" r="10" fill="#ffbd2e"/>
+                <line x1="200" y1="70" x2="200" y2="140" stroke="#ffbd2e" stroke-width="2"/>
+                <circle cx="290" cy="100" r="16" fill="#27c93f" opacity="0.85"/>
+                <text x="290" y="105" font-family="monospace" font-size="14" fill="#06160f" text-anchor="middle">ON</text>
+              </svg>
+            </div>
+            <div class="project-content">
+              <h3>Water Level Indicator</h3>
+              <p>A Physics project that detects and displays water levels using sensors and circuitry, alerting when tanks reach critical levels.</p>
+              <div class="tech-badges">
+                <span class="badge">Physics</span>
+                <span class="badge">Electronics</span>
+                <span class="badge">Hardware</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Disaster Management System -->
+          <article class="project-card">
+            <div class="project-image">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="project-svg" role="img" aria-label="Disaster management system database preview">
+                <rect width="400" height="220" fill="#0f1623"/>
+                <rect x="20" y="20" width="360" height="30" rx="6" fill="#1a2436"/>
+                <circle cx="36" cy="35" r="5" fill="#ff5f56"/>
+                <circle cx="54" cy="35" r="5" fill="#ffbd2e"/>
+                <circle cx="72" cy="35" r="5" fill="#27c93f"/>
+                <g fill="none" stroke="#2a3b52" stroke-width="2">
+                  <ellipse cx="90" cy="76" rx="50" ry="14" fill="#1a2436"/>
+                  <path d="M40 76 v60 a50 14 0 0 0 100 0 v-60"/>
+                  <ellipse cx="90" cy="136" rx="50" ry="14" fill="#1a2436" opacity="0.6"/>
+                </g>
+                <ellipse cx="90" cy="76" rx="50" ry="14" fill="#00d9b5" opacity="0.25"/>
+                <g fill="none" stroke="#2a3b52" stroke-width="2">
+                  <ellipse cx="230" cy="76" rx="50" ry="14" fill="#1a2436"/>
+                  <path d="M180 76 v60 a50 14 0 0 0 100 0 v-60"/>
+                  <ellipse cx="230" cy="136" rx="50" ry="14" fill="#1a2436" opacity="0.6"/>
+                </g>
+                <ellipse cx="230" cy="76" rx="50" ry="14" fill="#8b5cf6" opacity="0.25"/>
+                <path d="M140 76 H180" stroke="#00d9b5" stroke-width="2" stroke-dasharray="4 4"/>
+                <circle cx="330" cy="76" r="20" fill="#ff5f56" opacity="0.85"/>
+                <text x="330" y="82" font-family="monospace" font-size="18" fill="#1a0606" text-anchor="middle">!</text>
+              </svg>
+            </div>
+            <div class="project-content">
+              <h3>Disaster Management System</h3>
+              <p>A Database Systems project that models and manages disaster response data — resources, shelters, and emergency reports — through a relational schema.</p>
+              <div class="tech-badges">
+                <span class="badge">SQL</span>
+                <span class="badge">Database Design</span>
+                <span class="badge">ERD</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Automatic Light Detector (Sun Tracker) -->
+          <article class="project-card">
+            <div class="project-image">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="project-svg" role="img" aria-label="Automatic light detector sun tracker preview">
+                <rect width="400" height="220" fill="#0f1623"/>
+                <rect x="20" y="20" width="360" height="30" rx="6" fill="#1a2436"/>
+                <circle cx="36" cy="35" r="5" fill="#ff5f56"/>
+                <circle cx="54" cy="35" r="5" fill="#ffbd2e"/>
+                <circle cx="72" cy="35" r="5" fill="#27c93f"/>
+                <circle cx="100" cy="90" r="26" fill="#ffbd2e" opacity="0.9"/>
+                <g stroke="#ffbd2e" stroke-width="3" opacity="0.7">
+                  <line x1="100" y1="48" x2="100" y2="36"/>
+                  <line x1="100" y1="132" x2="100" y2="144"/>
+                  <line x1="58" y1="90" x2="46" y2="90"/>
+                  <line x1="142" y1="90" x2="154" y2="90"/>
+                </g>
+                <rect x="230" y="120" width="120" height="50" rx="4" fill="#1a2436" stroke="#2a3b52" stroke-width="2" transform="rotate(-18 290 145)"/>
+                <rect x="234" y="124" width="112" height="42" rx="2" fill="#00d9b5" opacity="0.2" transform="rotate(-18 290 145)"/>
+                <line x1="100" y1="90" x2="290" y2="145" stroke="#00d9b5" stroke-width="2" stroke-dasharray="5 5"/>
+                <circle cx="290" cy="145" r="6" fill="#00d9b5"/>
+              </svg>
+            </div>
+            <div class="project-content">
+              <h3>Automatic Light Detector (Sun Tracker)</h3>
+              <p>A Digital Logic Design project using LDR sensors and logic circuits to automatically orient a solar panel toward the strongest light source.</p>
+              <div class="tech-badges">
+                <span class="badge">Digital Logic Design</span>
+                <span class="badge">Circuit Design</span>
+                <span class="badge">Hardware</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Hospital Management System (Shifa Medicines) -->
+          <article class="project-card">
+            <div class="project-image">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="project-svg" role="img" aria-label="Hospital management system Shifa Medicines preview">
+                <rect width="400" height="220" fill="#0f1623"/>
+                <rect x="20" y="20" width="360" height="30" rx="6" fill="#1a2436"/>
+                <circle cx="36" cy="35" r="5" fill="#ff5f56"/>
+                <circle cx="54" cy="35" r="5" fill="#ffbd2e"/>
+                <circle cx="72" cy="35" r="5" fill="#27c93f"/>
+                <rect x="20" y="64" width="110" height="136" rx="6" fill="#1a2436"/>
+                <rect x="140" y="64" width="240" height="136" rx="6" fill="#1a2436"/>
+                <rect x="55" y="100" width="40" height="40" rx="4" fill="#00d9b5" opacity="0.85"/>
+                <rect x="70" y="110" width="10" height="20" fill="#0f1623"/>
+                <rect x="60" y="120" width="30" height="10" fill="#0f1623"/>
+                <text x="75" y="165" font-family="monospace" font-size="11" fill="#9aa7bd" text-anchor="middle">Shifa</text>
+                <rect x="156" y="80" width="208" height="14" rx="3" fill="#2a3b52"/>
+                <rect x="156" y="104" width="208" height="36" rx="4" fill="#00d9b5" opacity="0.15"/>
+                <rect x="156" y="148" width="208" height="36" rx="4" fill="#2a3b52"/>
+                <rect x="166" y="116" width="80" height="8" rx="4" fill="#00d9b5"/>
+                <rect x="166" y="160" width="90" height="8" rx="4" fill="#8b5cf6"/>
+              </svg>
+            </div>
+            <div class="project-content">
+              <h3>Shifa Medicines — Hospital Management System</h3>
+              <p>A hospital management system built in Miniconda, handling patient records and medicine inventory entirely in-memory without a persistent database layer.</p>
+              <div class="tech-badges">
+                <span class="badge">Python</span>
+                <span class="badge">Miniconda</span>
+                <span class="badge">OOP</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== EDUCATION SECTION ============== -->
+    <section id="education" class="section section-alt" aria-label="Education">
+      <div class="container">
+        <p class="eyebrow">// 05 — Education</p>
+        <h2 class="section-title">Academic background</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">2022 — 2026</span>
+              <h3>Bachelor of Science in Computer Science (BSCS)</h3>
+              <p class="timeline-org">Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology</p>
+              <p>
+                Coursework includes Data Structures &amp; Algorithms, Object-Oriented Programming, Database Systems,
+                Operating Systems, Computer Networks, and Software Engineering. Maintaining a strong academic record
+                while actively building practical projects alongside coursework.
+              </p>
+              <div class="tech-badges">
+                <span class="badge">Final Year</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fa-solid fa-school"></i></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">2020 — 2022</span>
+              <h3>Intermediate (Pre-Engineering)</h3>
+              <p class="timeline-org">KIPS College, Wah Cantt, Punjab, Pakistan</p>
+              <p>Completed pre-engineering studies with a focus on Mathematics, Physics, and Computer Science fundamentals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== CV SECTION ============== -->
+    <section id="cv" class="section cv-section" aria-label="Curriculum Vitae">
+      <div class="container">
+        <div class="cv-box glass-card">
+          <div class="cv-text">
+            <p class="eyebrow">// 06 — Resume</p>
+            <h2 class="section-title">Want the full picture?</h2>
+            <p>Download my CV for a complete overview of my education, skills, and project experience.</p>
+          </div>
+          <a href="#" download class="btn btn-primary btn-lg" id="downloadCvBtn">
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== CONTACT SECTION ============== -->
+    <section id="contact" class="section section-alt" aria-label="Contact information">
+      <div class="container">
+        <p class="eyebrow">// 07 — Contact</p>
+        <h2 class="section-title">Let's build something together</h2>
+        <p class="section-subtitle">Have an opportunity, project, or just want to say hi? My inbox is open.</p>
+
+        <div class="contact-grid">
+
+          <a href="mailto:hassanmaliknew0987@gmail.com" class="contact-card glass-card">
+            <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+            <h3>Email</h3>
+            <p>hassanmaliknew0987@gmail.com</p>
+          </a>
+
+          <a href="tel:+923335099951" class="contact-card glass-card">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <h3>Phone</h3>
+            <p>+92 333 5099951</p>
+          </a>
+
+          <div class="contact-card glass-card">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <h3>Location</h3>
+            <p>Wah Model Town Phase 1, Wah Cantt, Punjab, Pakistan</p>
+          </div>
+
+          <a href="https://linkedin.com/in/malik-hassan" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+            <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/malik-hassan</p>
+          </a>
+
+          <a href="https://github.com/hassanmaliknew0987" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+            <h3>GitHub</h3>
+            <p>github.com/hassanmaliknew0987</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Hassan<span class="logo-bracket">/&gt;</span>
+      </a>
+      <p class="footer-tagline">Computer Science Student &amp; Aspiring Software Developer</p>
+
+      <div class="footer-socials">
+        <a href="https://github.com/hassanmaliknew0987" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/malik-hassan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:hassanmaliknew0987@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+
+      <p class="footer-copy">&copy; <span id="currentYear"></span> Muhammad Hassan. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- ============== BACK TO TOP ============== -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
