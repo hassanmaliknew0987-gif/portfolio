@@ -32,6 +32,34 @@
 
   <link rel="stylesheet" href="style.css" />
 
+  <!-- Scoped styles for newly added project links (kept separate from style.css) -->
+  <style>
+    .project-links {
+      margin-top: 14px;
+      display: flex;
+      gap: 10px;
+    }
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #00d9b5;
+      background: rgba(0, 217, 181, 0.08);
+      border: 1px solid rgba(0, 217, 181, 0.35);
+      padding: 6px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    .project-link:hover {
+      background: rgba(0, 217, 181, 0.18);
+      transform: translateY(-1px);
+    }
+  </style>
+
   <!-- Favicon (inline SVG monogram, no external asset needed) -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0e17'/%3E%3Ctext x='50' y='66' font-size='50' font-family='monospace' fill='%2300d9b5' text-anchor='middle'%3EMH%3C/text%3E%3C/svg%3E" />
 </head>
@@ -510,6 +538,182 @@
                 <span class="badge">Python</span>
                 <span class="badge">Miniconda</span>
                 <span class="badge">OOP</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 7: Weather Forecasting API Workflow -->
+          <article class="project-card">
+            <div class="project-image">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="project-svg" role="img" aria-label="Weather forecasting automation workflow preview">
+                <rect width="400" height="220" fill="#0f1623"/>
+                <rect x="20" y="20" width="360" height="30" rx="6" fill="#1a2436"/>
+                <circle cx="36" cy="35" r="5" fill="#ff5f56"/>
+                <circle cx="54" cy="35" r="5" fill="#ffbd2e"/>
+                <circle cx="72" cy="35" r="5" fill="#27c93f"/>
+                <rect x="30" y="100" width="80" height="40" rx="6" fill="#1a2436" stroke="#2a3b52" stroke-width="1.5"/>
+                <text x="70" y="124" font-family="monospace" font-size="10" fill="#9aa7bd" text-anchor="middle">Webhook</text>
+                <path d="M110 120 H160" stroke="#00d9b5" stroke-width="2" marker-end="url(#arrow7)"/>
+                <rect x="160" y="100" width="80" height="40" rx="6" fill="#1a2436" stroke="#2a3b52" stroke-width="1.5"/>
+                <text x="200" y="124" font-family="monospace" font-size="10" fill="#9aa7bd" text-anchor="middle">HTTP API</text>
+                <path d="M240 120 H290" stroke="#00d9b5" stroke-width="2" marker-end="url(#arrow7)"/>
+                <rect x="290" y="100" width="80" height="40" rx="6" fill="#00d9b5" opacity="0.2" stroke="#00d9b5" stroke-width="1.5"/>
+                <text x="330" y="124" font-family="monospace" font-size="10" fill="#00d9b5" text-anchor="middle">JSON Out</text>
+                <circle cx="70" cy="70" r="14" fill="#ffbd2e" opacity="0.85"/>
+                <path d="M310 76 a12 12 0 1 1 12 14 a10 10 0 0 1 -2 -20 z" fill="#9aa7bd" opacity="0.5"/>
+                <defs>
+                  <marker id="arrow7" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                    <path d="M0 0 L6 3 L0 6 Z" fill="#00d9b5"/>
+                  </marker>
+                </defs>
+              </svg>
+            </div>
+            <div class="project-content">
+              <h3>Weather Forecasting Automation</h3>
+              <p>An n8n workflow that receives a webhook trigger, calls the OpenWeatherMap API, and reshapes the raw response into clean, structured fields (temperature, humidity, pressure, coordinates).</p>
+              <div class="tech-badges">
+                <span class="badge">n8n</span>
+                <span class="badge">Webhook</span>
+                <span class="badge">REST API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/hassanmaliknew0987-gif/ai-automation" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fa-brands fa-github"></i> View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 8: Customer Support Automation Workflow -->
+          <article class="project-card">
+            <div class="project-image">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="project-svg" role="img" aria-label="Customer support automation workflow preview">
+                <rect width="400" height="220" fill="#0f1623"/>
+                <rect x="20" y="20" width="360" height="30" rx="6" fill="#1a2436"/>
+                <circle cx="36" cy="35" r="5" fill="#ff5f56"/>
+                <circle cx="54" cy="35" r="5" fill="#ffbd2e"/>
+                <circle cx="72" cy="35" r="5" fill="#27c93f"/>
+                <rect x="24" y="95" width="70" height="34" rx="6" fill="#1a2436" stroke="#2a3b52" stroke-width="1.5"/>
+                <text x="59" y="116" font-family="monospace" font-size="9" fill="#9aa7bd" text-anchor="middle">Ticket In</text>
+                <path d="M94 112 H130" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arrow8)"/>
+                <polygon points="130,95 175,112 130,129 130,112" fill="#1a2436" stroke="#2a3b52" stroke-width="1.5"/>
+                <text x="150" y="116" font-family="monospace" font-size="8" fill="#9aa7bd" text-anchor="middle">If</text>
+                <path d="M175 112 H205" stroke="#00d9b5" stroke-width="2" marker-end="url(#arrow8)"/>
+                <rect x="205" y="60" width="66" height="28" rx="4" fill="#1a2436" stroke="#2a3b52" stroke-width="1.5"/>
+                <text x="238" y="79" font-family="monospace" font-size="8" fill="#9aa7bd" text-anchor="middle">Billing</text>
+                <rect x="205" y="98" width="66" height="28" rx="4" fill="#1a2436" stroke="#2a3b52" stroke-width="1.5"/>
+                <text x="238" y="117" font-family="monospace" font-size="8" fill="#9aa7bd" text-anchor="middle">Login</text>
+                <rect x="205" y="136" width="66" height="28" rx="4" fill="#1a2436" stroke="#2a3b52" stroke-width="1.5"/>
+                <text x="238" y="155" font-family="monospace" font-size="8" fill="#9aa7bd" text-anchor="middle">Shipment</text>
+                <rect x="300" y="98" width="70" height="28" rx="4" fill="#00d9b5" opacity="0.2" stroke="#00d9b5" stroke-width="1.5"/>
+                <text x="335" y="117" font-family="monospace" font-size="9" fill="#00d9b5" text-anchor="middle">Gmail</text>
+                <path d="M271 74 H300 V112" stroke="#2a3b52" stroke-width="1.5" fill="none"/>
+                <path d="M271 112 H300" stroke="#00d9b5" stroke-width="2" marker-end="url(#arrow8)"/>
+                <path d="M271 150 H300 V126" stroke="#2a3b52" stroke-width="1.5" fill="none"/>
+                <defs>
+                  <marker id="arrow8" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                    <path d="M0 0 L6 3 L0 6 Z" fill="#00d9b5"/>
+                  </marker>
+                </defs>
+              </svg>
+            </div>
+            <div class="project-content">
+              <h3>Customer Support Automation</h3>
+              <p>A webhook-driven support ticket router built in n8n. Incoming tickets are checked for VIP status, branched by issue type (billing, login, shipment) via Switch nodes, and routed to the right handler by email.</p>
+              <div class="tech-badges">
+                <span class="badge">n8n</span>
+                <span class="badge">Automation</span>
+                <span class="badge">Gmail API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/hassanmaliknew0987-gif/ai-automation" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fa-brands fa-github"></i> View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 9: Shipping Order Routing Workflow -->
+          <article class="project-card">
+            <div class="project-image">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="project-svg" role="img" aria-label="Shipping order routing workflow preview">
+                <rect width="400" height="220" fill="#0f1623"/>
+                <rect x="20" y="20" width="360" height="30" rx="6" fill="#1a2436"/>
+                <circle cx="36" cy="35" r="5" fill="#ff5f56"/>
+                <circle cx="54" cy="35" r="5" fill="#ffbd2e"/>
+                <circle cx="72" cy="35" r="5" fill="#27c93f"/>
+                <rect x="150" y="90" width="60" height="50" rx="4" fill="#1a2436" stroke="#2a3b52" stroke-width="2"/>
+                <path d="M150 105 H210 M180 90 V140" stroke="#2a3b52" stroke-width="1.5"/>
+                <text x="180" y="160" font-family="monospace" font-size="9" fill="#9aa7bd" text-anchor="middle">Order</text>
+                <path d="M210 115 H250" stroke="#00d9b5" stroke-width="2" marker-end="url(#arrow9)"/>
+                <circle cx="290" cy="75" r="20" fill="#1a2436" stroke="#2a3b52" stroke-width="1.5"/>
+                <text x="290" y="80" font-family="monospace" font-size="9" fill="#00d9b5" text-anchor="middle">US</text>
+                <circle cx="330" cy="115" r="20" fill="#1a2436" stroke="#2a3b52" stroke-width="1.5"/>
+                <text x="330" y="120" font-family="monospace" font-size="9" fill="#8b5cf6" text-anchor="middle">UK</text>
+                <circle cx="290" cy="155" r="20" fill="#1a2436" stroke="#2a3b52" stroke-width="1.5"/>
+                <text x="290" y="160" font-family="monospace" font-size="8" fill="#9aa7bd" text-anchor="middle">Japan</text>
+                <path d="M250 115 L270 75" stroke="#00d9b5" stroke-width="1.5"/>
+                <path d="M250 115 L310 115" stroke="#8b5cf6" stroke-width="1.5"/>
+                <path d="M250 115 L270 155" stroke="#9aa7bd" stroke-width="1.5"/>
+                <defs>
+                  <marker id="arrow9" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                    <path d="M0 0 L6 3 L0 6 Z" fill="#00d9b5"/>
+                  </marker>
+                </defs>
+              </svg>
+            </div>
+            <div class="project-content">
+              <h3>Shipping Order Routing Workflow</h3>
+              <p>An n8n workflow that ingests order data through a webhook and branches shipment handling by delivery method (standard/express) and destination country (US, UK, Japan) using nested Switch nodes.</p>
+              <div class="tech-badges">
+                <span class="badge">n8n</span>
+                <span class="badge">Workflow Automation</span>
+                <span class="badge">Logistics</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/hassanmaliknew0987-gif/ai-automation" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fa-brands fa-github"></i> View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 10: News Aggregator Workflow -->
+          <article class="project-card">
+            <div class="project-image">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="project-svg" role="img" aria-label="News aggregator automation workflow preview">
+                <rect width="400" height="220" fill="#0f1623"/>
+                <rect x="20" y="20" width="360" height="30" rx="6" fill="#1a2436"/>
+                <circle cx="36" cy="35" r="5" fill="#ff5f56"/>
+                <circle cx="54" cy="35" r="5" fill="#ffbd2e"/>
+                <circle cx="72" cy="35" r="5" fill="#27c93f"/>
+                <rect x="30" y="70" width="90" height="100" rx="6" fill="#1a2436" stroke="#2a3b52" stroke-width="1.5"/>
+                <text x="75" y="100" font-family="monospace" font-size="9" fill="#9aa7bd" text-anchor="middle">News API</text>
+                <circle cx="75" cy="120" r="10" fill="#ffbd2e" opacity="0.8"/>
+                <path d="M120 120 H160" stroke="#00d9b5" stroke-width="2" marker-end="url(#arrow10)"/>
+                <rect x="160" y="90" width="70" height="60" rx="6" fill="#1a2436" stroke="#2a3b52" stroke-width="1.5"/>
+                <text x="195" y="124" font-family="monospace" font-size="8" fill="#9aa7bd" text-anchor="middle">Split Out</text>
+                <path d="M230 120 H260" stroke="#00d9b5" stroke-width="2" marker-end="url(#arrow10)"/>
+                <rect x="260" y="60" width="100" height="28" rx="4" fill="#00d9b5" opacity="0.15" stroke="#00d9b5" stroke-width="1.5"/>
+                <rect x="270" y="68" width="30" height="12" rx="2" fill="#00d9b5" opacity="0.6"/>
+                <rect x="304" y="68" width="46" height="4" rx="2" fill="#2a3b52"/>
+                <rect x="260" y="96" width="100" height="28" rx="4" fill="#8b5cf6" opacity="0.15" stroke="#8b5cf6" stroke-width="1.5"/>
+                <rect x="270" y="104" width="30" height="12" rx="2" fill="#8b5cf6" opacity="0.6"/>
+                <rect x="304" y="104" width="46" height="4" rx="2" fill="#2a3b52"/>
+                <rect x="260" y="132" width="100" height="28" rx="4" fill="#00d9b5" opacity="0.15" stroke="#00d9b5" stroke-width="1.5"/>
+                <rect x="270" y="140" width="30" height="12" rx="2" fill="#00d9b5" opacity="0.6"/>
+                <rect x="304" y="140" width="46" height="4" rx="2" fill="#2a3b52"/>
+                <defs>
+                  <marker id="arrow10" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                    <path d="M0 0 L6 3 L0 6 Z" fill="#00d9b5"/>
+                  </marker>
+                </defs>
+              </svg>
+            </div>
+            <div class="project-content">
+              <h3>News Aggregator Automation</h3>
+              <p>An n8n workflow triggered by webhook that pulls top headlines from NewsAPI, splits the article array into individual items, and extracts title, description, content, and image for each article.</p>
+              <div class="tech-badges">
+                <span class="badge">n8n</span>
+                <span class="badge">NewsAPI</span>
+                <span class="badge">Data Pipeline</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/hassanmaliknew0987-gif/ai-automation" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fa-brands fa-github"></i> View Code</a>
               </div>
             </div>
           </article>
